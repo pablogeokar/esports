@@ -1,0 +1,8 @@
+/*
+ Lembrar de deixar instaladao as extensões abaixo para evitar que o VSCode acuse erros de sintaxe 
+ - PostCSS Language Support
+ - Tailwind CSS IntelliSense
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
