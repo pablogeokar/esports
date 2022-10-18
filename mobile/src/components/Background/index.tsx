@@ -1,12 +1,17 @@
-import React from 'react';
-import { View } from 'react-native';
+import { ImageBackground } from 'react-native';
+
+import BackgroundImg from '../../assets/background-galaxy.png'
 
 import { styles } from './styles';
 
-export function Background() {
-  return (
-    <View style={styles.container}>
+interface BackgroundProps {
+  children: React.ReactNode
+}
 
-    </View>
+export function Background({ children }: BackgroundProps) {
+  return (
+    <ImageBackground source={BackgroundImg} defaultSource={BackgroundImg} style={styles.container}>
+      {children}
+    </ImageBackground>
   );
 }
