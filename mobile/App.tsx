@@ -9,7 +9,7 @@ import {
 
 import { Background } from './src/components/Background';
 import { Loading } from './src/components/Loading';
-import { Home } from './src/components/Screens/Home';
+import { Routes } from './src/rotes/index';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +22,7 @@ export default function App() {
   return (
     <Background>
       <StatusBar barStyle='light-content' backgroundColor='transparent' translucent />
-      {fontsLoaded ? <Home /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </Background>
   );
 }
